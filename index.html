@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>anime</title>
+    <title>secret</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-</body>
-    <head>
-             <h1> secret
-    </head>
-    
-        <h2>conectaras con alguien por tus gustos raros?</h2>
-    </h1>
-    <img src="img/siru.jpg" alt="siru">
-     <h2>un poco sobre ti</h2>
-       <ul>
-            <li>❤ cuentanos una historia paranormal </li>
+<body onload="mostrarAlerta()">
+    <header>
+        <h1>secret</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Página Dos</a></li>
+                <li><a href="pagina2.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li>🥵que es lo mas loco que haz echo por amor?</li>
+    <main>
+        <section class="intro">
+            <h2>¿Puedes crear una conexión solo con tu personalidad?</h2>
+            <p>Una nueva forma de conocer personas... ¿te atreves a descubrir lo que hay detrás?</p>
+            <img src="img/parque-solar1-1.jpg" alt="Imagen misteriosa" class="responsive-img">
+        </section>
 
-            <li>😈alguna fantasia?</li>
-            <li>😛momento ramdom de la vida?</li>
-            <li>🍑comida preferia</li>
+        <section class="benefits">
+            <h2>Beneficios de entrar</h2>
+            <button onclick="toggleBeneficios()">Mostrar/Ocultar</button>
+            <ul id="lista-beneficios">
+                <li>🔒 Privacidad total</li>
+                <li>🕵️ Conexiones auténticas</li>
+                <li>💬 Conversaciones únicas</li>
+                <li>🌙 Ambiente exclusivo</li>
+            </ul>
+        </section>
 
+        <section class="tools">
+            <button onclick="cambiarFondo()">Cambiar color de fondo</button>
+        </section>
+    </main>
 
-       </ul>
     <footer>
-        <p>creado por pablo calderon
-            <a href="mailto:pablocalderontrabajo@gmail.com">✉ contacto</a>
-        </p>
+        <p>Creado por pablo calderon</p>
         <p>
-            <a href="https://www.google.com">🌐 google</a>
+            <a href="mailto:arley.villa@udea.edu.co">✉️ Contacto</a> |
+            <a href="https://www.google.com" target="_blank">🌐 Google</a>
         </p>
-    </footer>   
+        <p id="fecha-hora"></p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
